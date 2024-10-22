@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 50px auto;
+	max-width: 950px;
+}
+
+.card{
+	position: relative;
+	margin: 1px;
+	cursor: pointer;
+}
+
+.card .discount{
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: red;
+	padding: 5px 10px;
+	color: white;
+}
+
+.card .discount.light{
+	background-color: green;
+}
+
+.card .hearts{
+	position: absolute;
+	display: none;
+	bottom: 10px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	color: red;
+}
+
+.card:hover .hearts{
+	display: block;
+}
